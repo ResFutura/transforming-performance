@@ -425,3 +425,11 @@
   footer p a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
   #partners .cover .pic { aspect-ratio: 1414 / 260; }
   @media (max-width: 860px) { #partners .cover .pic { aspect-ratio: 16 / 7; } }
+  .btn[aria-disabled="true"] { opacity: .5; pointer-events: none; cursor: default; }
+  .hero .right .btn[aria-disabled="true"] { opacity: 1; background: rgba(255,255,255,.75); color: var(--slate); border-color: rgba(42,42,42,.3); }
+  .sperre { font-weight: 700; font-size: 18px; line-height: 1.4; color: var(--navy); max-width: 30em; }
+  .hero .right .sperre { margin-top: 10px; }
+  .sperre.gross { max-width: 44em; margin: -24px 0 40px; }
+  footer .legal { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.18); display: grid; grid-template-columns: 1fr 1fr; gap: 40px; font-size: 13px; line-height: 1.55; color: #cfcfcf; }
+  footer .legal h2 { font-family: var(--serif); font-weight: 400; font-size: 16px; color: #e9e9e9; margin-bottom: 6px; }
+  @media (max-width: 860px) { footer .legal { grid-template-columns: 1fr; gap: 20px; } }
