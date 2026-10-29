@@ -180,8 +180,7 @@
   .elist li { padding: 12px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 112px 1fr; gap: 12px; font-size: 15.5px; }
   .elist time { font-variant-numeric: tabular-nums; color: var(--slate); font-size: 14.5px; }
 
-  .faq { border-top: 1px solid var(--ink); }
-  .faq details { border-bottom: 1px solid var(--rule); }
+  .faq { border-top: 0; }  .faq details { border-bottom: 1px solid var(--rule); }
   .faq summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 1fr) 28px; gap: 24px; align-items: baseline; padding: 36px 0; }
   .faq summary::-webkit-details-marker { display: none; }
   .faq h3 { font-family: var(--serif); font-weight: 400; font-size: 24px; line-height: 1.3; }
@@ -424,3 +423,5 @@
   footer .flogos { display: flex; align-items: flex-end; gap: 16px; }
   footer .flogos img.wwf { width: 54px; background: #fff; padding: 4px 5px; }
   footer p a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  #partners .cover .pic { aspect-ratio: 1414 / 260; }
+  @media (max-width: 860px) { #partners .cover .pic { aspect-ratio: 16 / 7; } }
