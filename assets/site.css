@@ -114,7 +114,7 @@
   .stat h3 { font-weight: 400; font-size: 16.5px; line-height: 1.45; max-width: 16em; }
 
   .fnote { font-size: 12.5px; color: var(--slate); margin-top: 16px; text-align: right; }
-  .note-box { margin-top: 56px; padding: 22px 26px; background: var(--warm); border-left: 3px solid var(--acc); max-width: 52em; font-size: 16px; }
+  .fnote.links { text-align: left; }  .fig .fnote.nah { margin-top: -26px; }  .note-box { margin-top: 56px; padding: 22px 26px; background: var(--warm); border-left: 3px solid var(--acc); max-width: 52em; font-size: 16px; }
 
   .dl-group { margin-top: 8px; }
   .dl-group + .dl-group { margin-top: 48px; }
