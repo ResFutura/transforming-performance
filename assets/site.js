@@ -54,4 +54,23 @@
     }
   }
 
+  var herkunft = (location.search.match(/[?&](?:ref|utm_source)=([\w-]{1,40})/) || [])[1];
+  var signups = Array.prototype.slice.call(document.querySelectorAll('form[data-signup]'));
+  signups.forEach(function (f) {
+    var h = f.querySelector('[data-herkunft]');
+    if (h && herkunft) h.value = herkunft.toLowerCase();
+    f.addEventListener('submit', function (e) {
+      if (f.querySelector('.hp input').value) { e.preventDefault(); return; }
+      if (f.getAttribute('action').indexOf('CLEVERREACH-') > -1) {
+        e.preventDefault();
+        say(de ? 'Vorschau: Das Formular ist noch nicht mit CleverReach verbunden.' : 'Preview: the form is not yet connected to CleverReach.');
+        return;
+      }
+      f.querySelector('button[type=submit]').disabled = true;
+    });
+  });
+  window.addEventListener('pageshow', function () {
+    signups.forEach(function (f) { f.querySelector('button[type=submit]').disabled = false; });
+  });
+
 })();

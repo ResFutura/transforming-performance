@@ -433,3 +433,21 @@
   footer .legal { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.18); display: grid; grid-template-columns: 1fr 1fr; gap: 40px; font-size: 13px; line-height: 1.55; color: #cfcfcf; }
   footer .legal h2 { font-family: var(--serif); font-weight: 400; font-size: 16px; color: #e9e9e9; margin-bottom: 6px; }
   @media (max-width: 860px) { footer .legal { grid-template-columns: 1fr; gap: 20px; } }
+  footer .legal p + p { margin-top: 10px; }
+  .signup { margin-top: 56px; }
+  .signup-form { padding-top: 20px; }
+  .signup-form .lead { font-family: var(--serif); font-size: 21px; line-height: 1.3; max-width: none; }
+  .signup-form .fields { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 16px 20px; margin-top: 24px; }
+  .signup-form .fields label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: .02em; }
+  .signup-form .fields label i { font-style: normal; font-weight: 400; color: var(--slate); }
+  .signup-form input[type=text], .signup-form input[type=email] { font: inherit; font-size: 16px; font-weight: 400; letter-spacing: 0; color: var(--ink); background: #fff; border: 1px solid #7C8796; border-radius: 0; padding: 11px 12px; width: 100%; min-width: 0; }
+  .signup-form input[type=text]:focus, .signup-form input[type=email]:focus { outline: 2px solid var(--navy); outline-offset: 0; border-color: var(--navy); }
+  .signup-form .consent { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; margin-top: 22px; font-size: 14px; line-height: 1.5; color: var(--ink); }
+  .signup-form .consent input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--navy); }
+  .signup-form .send p a { color: var(--navy); }
+  .signup-form .send { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 24px; }
+  .signup-form .send p { flex: 1 1 20em; font-size: 14px; color: var(--slate); }
+  .signup-form .btn[disabled] { opacity: .6; cursor: default; }
+  .signup-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  @media (max-width: 1080px) { .signup-form .fields { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .signup { margin-top: 44px; } .signup-form .lead { font-size: 19px; } .signup-form .fields { grid-template-columns: 1fr; } }
