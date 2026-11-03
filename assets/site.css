@@ -51,7 +51,8 @@
   .hero::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 50%; z-index: 1; background: linear-gradient(180deg, rgba(28,34,44,.50) 0%, rgba(28,34,44,.14) 38%, rgba(28,34,44,0) 60%, rgba(28,34,44,.30) 100%); }
   .hero::after { content: ""; position: absolute; z-index: 1; top: 0; bottom: 0; left: 50%; right: 0; background: linear-gradient(180deg, rgba(250,248,246,.66) 0%, rgba(250,248,246,.46) 45%, rgba(250,248,246,.08) 80%, rgba(250,248,246,0) 100%); }
   .hero .right { color: var(--ink); }
-  .hero .right .btn:not(.solid):hover { background: rgba(42,42,42,.08); }
+  .hero .right .btn:not(.solid) { background: rgba(255,255,255,.75); }
+  .hero .right .btn:not(.solid):hover { background: rgba(255,255,255,.92); }
   .hero .right .btn.solid { background: var(--ink); color: #fff; border-color: var(--ink); }
   .hero .right .btn.solid:hover { background: #000; }
   .hero .in { position: relative; z-index: 2; width: 100%; max-width: none; display: grid; grid-template-columns: 1fr 1fr; padding: 64px 0 56px; }
